@@ -1,5 +1,6 @@
 package controller;
 
+import db.DBConnection;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
 import javafx.event.ActionEvent;
@@ -12,6 +13,8 @@ import javafx.stage.Stage;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 import java.time.LocalDate;
 import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
@@ -44,6 +47,8 @@ public class DashboardFormController {
       Stage stage = new Stage();
         try {
             stage.setScene(new Scene(FXMLLoader.load(getClass().getResource("/view/rooms_management_form_view.fxml"))));
+            stage.setTitle("The Kings Hotel - Rooms Management");
+            stage.setResizable(false);
             stage.show();
         } catch (IOException e) {
             throw new RuntimeException(e);
@@ -51,6 +56,7 @@ public class DashboardFormController {
     }
 
     public void btnReservationManagementOnClick(ActionEvent actionEvent) {
+
     }
 
     public void btnCustomerManagementOnClick(ActionEvent actionEvent) {
