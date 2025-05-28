@@ -1,8 +1,169 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.TextFlow?>
+
+<AnchorPane prefHeight="733.0" prefWidth="916.0" stylesheets="@../style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
+   <children>
+      <ImageView fitHeight="756.0" fitWidth="1194.0" layoutX="-203.0" layoutY="-7.0" pickOnBounds="true">
+         <image>
+            <Image url="@../images/dashboard_background.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="75.0" arcWidth="75.0" height="706.0" layoutX="26.0" layoutY="18.0" opacity="0.45" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" styleClass="custom-button" width="935.0" />
+      <Rectangle arcHeight="75.0" arcWidth="75.0" fill="WHITE" height="566.0" layoutX="61.0" layoutY="150.0" opacity="0.21" stroke="BLACK" strokeType="INSIDE" width="438.0" />
+      <ImageView fitHeight="374.0" fitWidth="384.0" layoutX="599.0" layoutY="93.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="52.0" layoutY="74.0" text="Dashboard" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Times New Roman" size="55.0" />
+         </font>
+      </Label>
+      <Button fx:id="btnRoom" layoutX="82.0" layoutY="168.0" onAction="#btnRoomManagementOnClick" prefHeight="79.0" prefWidth="82.0">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_room.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-button1" />
+               </styleClass>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="btnReservationManagement" layoutX="82.0" layoutY="257.0" onAction="#btnReservationManagementOnClick" prefHeight="79.0" prefWidth="82.0">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_reservation.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-button2" />
+               </styleClass>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="btnCustomerManagement" layoutX="82.0" layoutY="346.0" onAction="#btnCustomerManagementOnClick" prefHeight="79.0" prefWidth="82.0">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_customer.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-button3" />
+               </styleClass>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="btnCheckIn" layoutX="82.0" layoutY="437.0" onAction="#btnCheckInOnClick" prefHeight="79.0" prefWidth="82.0">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_checkin.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-button6" />
+               </styleClass>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="btnBilling" layoutX="82.0" layoutY="528.0" onAction="#btnBillingOnClick" prefHeight="79.0" prefWidth="82.0">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_billing.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-button4" />
+               </styleClass>
+            </ImageView>
+         </graphic>
+      </Button>
+
+      <Button fx:id="btnReport" layoutX="82.0" layoutY="621.0" onAction="#btnReportOnClick" prefHeight="79.0" prefWidth="82.0">
+         <graphic>
+            <ImageView fitHeight="73.0" fitWidth="100.0" preserveRatio="true">
+               <image>
+                  <Image url="@../images/btn_report.png" />
+               </image>
+               <styleClass>
+                  <String fx:value="custom-button" />
+                  <String fx:value="custom-button5" />
+               </styleClass>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Label layoutX="191.0" layoutY="191.0" text="Rooms Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="280.0" text="Reservations Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="369.0" text="Customers Management" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="460.0" text="Check-ins and Check-outs" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="551.0" text="Billing" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label layoutX="191.0" layoutY="644.0" text="Generate Reports" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="660.0" layoutY="561.0" text="11:12:12" textFill="WHITE">
+         <font>
+            <Font size="77.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="732.0" layoutY="643.0" text="2025-12-12" textFill="WHITE">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Label>
+      <Line endX="224.800048828125" layoutX="716.0" layoutY="573.0" startX="-55.199951171875" stroke="WHITE" strokeWidth="2.0" />
+      <Line endX="224.800048828125" layoutX="716.0" layoutY="685.0" startX="-55.199951171875" stroke="WHITE" strokeWidth="2.0" />
+      <TextFlow layoutX="773.0" layoutY="419.0" />
+      <BorderPane layoutX="-121.0" layoutY="429.0" />
+      <Label layoutX="652.0" layoutY="429.0" prefHeight="150.0" prefWidth="297.0" text="Welcome to The Kings Hotel Dashboard. Where elegance meets efficiency. Manage your royal retreat with ease, monitor operations in real-time, and ensure every guest receives the majestic experience they deserve." textAlignment="JUSTIFY" textFill="WHITE" wrapText="true">
+         <font>
+            <Font name="Times New Roman Italic" size="15.0" />
+         </font>
+      </Label>
 
 
-<AnchorPane prefHeight="638.0" prefWidth="965.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.DashboardFormController">
-
+   </children>
 </AnchorPane>

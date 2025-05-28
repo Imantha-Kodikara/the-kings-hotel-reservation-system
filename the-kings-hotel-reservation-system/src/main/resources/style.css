@@ -1,0 +1,54 @@
+.custom-button1 {
+    -fx-background-image: url("/images/btn_room.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.custom-button2 {
+    -fx-background-image: url("/images/btn_reservation.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.custom-button3 {
+    -fx-background-image: url("/images/btn_customer.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.custom-button3 {
+    -fx-background-image: url("/images/btn_billing.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.custom-button3 {
+    -fx-background-image: url("/images/btn_report.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+
+.custom-button3 {
+    -fx-background-image: url("/images/btn_checkin.png");
+    -fx-background-size: cover;
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-border-color: transparent;
+    -fx-padding: 0;
+}
+

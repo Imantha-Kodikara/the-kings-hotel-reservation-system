@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RoomsManagementFormController">
+   <children>
+      <ImageView fitHeight="400.0" fitWidth="600.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/hotel_room_1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="75.0" arcWidth="75.0" height="365.0" layoutX="16.0" layoutY="17.0" opacity="0.69" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="569.0" />
+      <Label layoutX="168.0" layoutY="51.0" text="Rooms Management" textFill="WHITE" underline="true">
+         <font>
+            <Font name="Times New Roman Bold" size="30.0" />
+         </font>
+      </Label>
+      <JFXButton layoutX="47.0" layoutY="125.0" onAction="#btnAddRoomOnClick" prefHeight="26.0" prefWidth="242.0" style="-fx-background-color: EBC55B;" text="Add Room">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="47.0" layoutY="181.0" onAction="#btnUpdateRoomOnClick" prefHeight="26.0" prefWidth="242.0" style="-fx-background-color: EBC55B;" text="Update Room">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="47.0" layoutY="239.0" onAction="#btnDeleteRoomOnClick" prefHeight="26.0" prefWidth="242.0" style="-fx-background-color: EBC55B;" text="Delete Room">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton layoutX="47.0" layoutY="297.0" onAction="#btnViewRoomOnClick" prefHeight="26.0" prefWidth="242.0" style="-fx-background-color: EBC55B;" text="View Room">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </JFXButton>
+      <ImageView fitHeight="201.0" fitWidth="212.0" layoutX="364.0" layoutY="81.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/logo.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="lblTime" layoutX="407.0" layoutY="277.0" text="12:12:12" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="32.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="430.0" layoutY="315.0" text="2025-02-14" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
